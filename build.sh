@@ -2,6 +2,6 @@
 
 MITM_VERSION=$(git describe --tags)
 
-CGO_ENABLED=0 go build -ldflags="-s -w -X main.version=${MITM_VERSION}" -o ./bin/mitm-deliver ./cmd/deliver/main.go
+CGO_ENABLED=0 go build -ldflags="-s -w -X main.version=${MITM_VERSION}" -o ./bin/mitm-deliver-apigee ./cmd/apigee/main.go
 
-cp bin/mitm-deliver ../../app/bin/.
+cp bin/mitm-deliver-apigee ../../app/bin/.
